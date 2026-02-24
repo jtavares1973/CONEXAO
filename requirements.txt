@@ -1,0 +1,11 @@
+# Dependências existentes
+pandas
+openpyxl
+
+# Agente OpenAI / OpenRouter / Groq
+openai>=1.30.0
+python-dotenv>=1.0.0
+
+# Groq SDK nativo (opcional — para acesso aos headers de rate limit)
+# Instale com: pip install groq
+groq>=0.11.0

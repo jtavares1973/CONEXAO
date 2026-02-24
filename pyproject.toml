@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "naccarona-agent"
+version = "1.0.0"
+description = "Agente IA multi-provedor com Round-Robin (OpenRouter, Groq, Gemini, Cerebras, SambaNova)"
+requires-python = ">=3.11"
+dependencies = [
+    "openai>=1.30.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+naccarona = "openai_agent.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]

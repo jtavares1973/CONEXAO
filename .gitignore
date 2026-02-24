@@ -1,0 +1,29 @@
+# Credenciais — NUNCA commitar!
+.env
+*.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Checkpoints e saídas
+*.jsonl
+*.csv
+*.xlsx
+!pedagogo_*.csv
+!pedagogo_*.json
+
+# IDEs
+.vscode/settings.json
+.idea/
+*.swp
